@@ -3,7 +3,7 @@
  */
 
 // Importation des packages nécessaires
-import * as express from 'express'; // Framework NodeJS
+import express from 'express'; // Framework NodeJS
 import * as http from 'http'; // Module serveur HTTP
 import * as WebSocket from 'ws'; // Module serveur WebSocket
 
@@ -85,6 +85,6 @@ wss.on('connection', (ws: WebSocket, request: Request) => {
 
 // Démarre le serveur 
 server.listen(process.env.PORT || 8999, () => {
-    console.log(`Le serveur est démarré sur l'adresse : ${server.address().toString()} :)`);
+    console.log(`Le serveur est démarré sur l'adresse : 8999} :)`);
     //console.log ('Le serveur est démarré et écoute sur l\'adresse ' + server.address());
 });
